@@ -1,6 +1,7 @@
 import React from "react";
 import CountryFlag from "./CountryFlag";
 import currencies from "../utils/currencies.json";
+import getRates from "../utils/getRates";
 
 const CurrencyListItem = ({
   alphaCode,
@@ -9,6 +10,9 @@ const CurrencyListItem = ({
   currencySymbol,
   setDefaultCurrency,
   setShow,
+  setExchRate,
+  setValue1,
+  setValue2,
 }: {
   alphaCode: string;
   currencyName: string;
@@ -27,6 +31,9 @@ const CurrencyListItem = ({
     >
   >;
   setShow: React.Dispatch<React.SetStateAction<boolean>>;
+  setExchRate: React.Dispatch<React.SetStateAction<number>>;
+  setValue1: React.Dispatch<React.SetStateAction<number>>;
+  setValue2: React.Dispatch<React.SetStateAction<number>>;
 }) => {
   return (
     <div
@@ -36,6 +43,13 @@ const CurrencyListItem = ({
         );
         setDefaultCurrency(() => wantedCurrency);
         setShow(() => false);
+        getRates(
+          "http://localhost:4000/api/v1/rates/",
+          currencyName,
+          setExchRate
+        );
+        setValue1(() => 0);
+        setValue2(() => 0);
       }}
       className="currency-card currency-card2"
     >
