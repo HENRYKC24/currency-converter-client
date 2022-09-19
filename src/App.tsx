@@ -19,25 +19,21 @@ const App: React.FC = () => {
     }}>
       <ConvertFrom
         setExchRate1={setExchRate1}
-        setExchRate2={setExchRate2}
         exchRate1={exchRate1}
         exchRate2={exchRate2}
         setValue1={setValue1}
         setValue2={setValue2}
         value1={value1}
-        value2={value2}
         show1={show1}
         setShow1={setShow1}
         setShow2={setShow2}
       />
       <ConvertTo
-        setExchRate1={setExchRate1}
         setExchRate2={setExchRate2}
         exchRate1={exchRate1}
         exchRate2={exchRate2}
         setValue1={setValue1}
         setValue2={setValue2}
-        value1={value1}
         value2={value2}
         show2={show2}
         setShow1={setShow1}
