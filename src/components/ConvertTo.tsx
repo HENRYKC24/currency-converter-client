@@ -29,6 +29,9 @@ const ConvertTo = ({
     currencies.find((curr) => curr.currency === "USD")
   );
 
+  const [toUseCurrencies, setToUseCurrencies] = useState(currencies);
+  const [searchText, setSearchText] = useState("");
+
   useEffect(() => {
     getRates("http://localhost:4000/api/v1/rates/", "USD", setExchRate2);
   }, [setExchRate2]);
@@ -67,22 +70,44 @@ const ConvertTo = ({
         <div className={`dropdown ${show2 ? "show" : ""}`}>
           <div onClick={(e) => e.stopPropagation()}>
             <i className="fa fa-search"></i>
-            <input type="text" />
+            <input
+              value={searchText}
+              onChange={(e) => {
+                setSearchText(() => e.target.value);
+                setToUseCurrencies(() =>
+                  currencies.filter(
+                    (el) =>
+                      el.currency
+                        .toLowerCase()
+                        .includes(e.target.value.toLowerCase()) ||
+                      el.currencyName
+                        .toLowerCase()
+                        .includes(e.target.value.toLowerCase())
+                  )
+                );
+              }}
+              type="text"
+            />
           </div>
           <div className="list">
-            {currencies.map((item) => (
-              <CurrencyListItem
-                setValue1={setValue1}
-                setValue2={setValue2}
-                setExchRate={setExchRate2}
-                setDefaultCurrency={setDefaultCurrency}
-                setShow={setShow2}
-                alphaCode={item.countryCode}
-                currencyName={item.currency}
-                currencyDescription={item.currencyName}
-                currencySymbol={item.currencySymbol}
-              />
-            ))}
+            {toUseCurrencies.length !== 0 ? (
+              toUseCurrencies.map((item) => (
+                <CurrencyListItem
+                  key={item.id}
+                  setValue1={setValue1}
+                  setValue2={setValue2}
+                  setExchRate={setExchRate2}
+                  setDefaultCurrency={setDefaultCurrency}
+                  setShow={setShow2}
+                  alphaCode={item.countryCode}
+                  currencyName={item.currency}
+                  currencyDescription={item.currencyName}
+                  currencySymbol={item.currencySymbol}
+                />
+              ))
+            ) : (
+              <p className="no-match">No Match Found</p>
+            )}
           </div>
         </div>
       </div>
