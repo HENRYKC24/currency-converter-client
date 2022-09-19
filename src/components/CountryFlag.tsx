@@ -1,5 +1,3 @@
-import React from "react";
-
 const CountryFlag = ({ countryAlpha2Code }: { countryAlpha2Code: string | undefined }) => (
   <img
   className="flag"
