@@ -1,0 +1,310 @@
+[
+  {
+    "id": 1,
+    "countryCode": "au",
+    "currency": "AUD",
+    "currencySymbol": "A$",
+    "currencyName": "Australian Dollars"
+  },
+  {
+    "id": 2,
+    "countryCode": "bd",
+    "currency": "BDT",
+    "currencySymbol": "৳",
+    "currencyName": "Bangladeshi Taka"
+  },
+  {
+    "id": 3,
+    "countryCode": "bh",
+    "currency": "BHD",
+    "currencySymbol": ".د.ب",
+    "currencyName": "Bahrain Dinars"
+  },
+  {
+    "id": 4,
+    "countryCode": "gb",
+    "currency": "GBP",
+    "currencySymbol": "£",
+    "currencyName": "British Pounds Sterling"
+  },
+  {
+    "id": 5,
+    "countryCode": "ca",
+    "currency": "CAD",
+    "currencySymbol": "C$",
+    "currencyName": "Canadian Dollars"
+  },
+  {
+    "id": 6,
+    "countryCode": "cn",
+    "currency": "CNY",
+    "currencySymbol": "¥",
+    "currencyName": "Chinese Yuan"
+  },
+  {
+    "id": 7,
+    "countryCode": "cz",
+    "currency": "CZK",
+    "currencySymbol": "Kč",
+    "currencyName": "Czecholov Koruna"
+  },
+  {
+    "id": 8,
+    "countryCode": "dk",
+    "currency": "DKK",
+    "currencySymbol": "Kr.",
+    "currencyName": "Danish Kroner"
+  },
+  {
+    "id": 9,
+    "countryCode": "eu",
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "currencyName": "Euros"
+  },
+  {
+    "id": 10,
+    "countryCode": "fj",
+    "currency": "FJD",
+    "currencySymbol": "FJ$",
+    "currencyName": "Fiji Dollars"
+  },
+  {
+    "id": 11,
+    "countryCode": "pf",
+    "currency": "XPF",
+    "currencySymbol": "₣",
+    "currencyName": "French Pacific Francs"
+  },
+  {
+    "id": 12,
+    "countryCode": "hk",
+    "currency": "HKD",
+    "currencySymbol": "元",
+    "currencyName": "Hong Kong Dollars"
+  },
+  {
+    "id": 13,
+    "countryCode": "hu",
+    "currency": "HUF",
+    "currencySymbol": "Ft",
+    "currencyName": "Hungarian Forint"
+  },
+  {
+    "id": 14,
+    "countryCode": "in",
+    "currency": "INR",
+    "currencySymbol": "₹",
+    "currencyName": "Indian Rupees"
+  },
+  {
+    "id": 15,
+    "countryCode": "id",
+    "currency": "IDR",
+    "currencySymbol": "Rp",
+    "currencyName": "Indonesian Rupiah"
+  },
+  {
+    "id": 16,
+    "countryCode": "il",
+    "currency": "ILS",
+    "currencySymbol": "₪",
+    "currencyName": "Israeli Shekel"
+  },
+  {
+    "id": 17,
+    "countryCode": "jp",
+    "currency": "JPY",
+    "currencySymbol": "¥",
+    "currencyName": "Japanese Yen"
+  },
+  {
+    "id": 18,
+    "countryCode": "jo",
+    "currency": "JOD",
+    "currencySymbol": "د.ا",
+    "currencyName": "Jordanian Dinar"
+  },
+  {
+    "id": 19,
+    "countryCode": "ke",
+    "currency": "KES",
+    "currencySymbol": "KSh",
+    "currencyName": "Kenyan Shilling"
+  },
+  {
+    "id": 20,
+    "countryCode": "bh",
+    "currency": "BHD",
+    "currencySymbol": ".د.ب",
+    "currencyName": "Bahrain Dinars"
+  },
+  {
+    "id": 21,
+    "countryCode": "kw",
+    "currency": "KWD",
+    "currencySymbol": "د.ك",
+    "currencyName": "Kuwaiti Dinars"
+  },
+  {
+    "id": 22,
+    "countryCode": "mu",
+    "currency": "MUR",
+    "currencySymbol": "₨",
+    "currencyName": "Mauritius Rupee"
+  },
+  {
+    "id": 23,
+    "countryCode": "mx",
+    "currency": "MXN",
+    "currencySymbol": "Mex$",
+    "currencyName": "Mexican Peso"
+  },
+  {
+    "id": 24,
+    "countryCode": "nz",
+    "currency": "NZD",
+    "currencySymbol": "$",
+    "currencyName": "New Zealand Dollars"
+  },
+  {
+    "id": 25,
+    "countryCode": "no",
+    "currency": "NOK",
+    "currencySymbol": "kr",
+    "currencyName": "Norwegian Krone"
+  },
+  {
+    "id": 26,
+    "countryCode": "om",
+    "currency": "OMR",
+    "currencySymbol": "ر.ع.",
+    "currencyName": "Omani Rial"
+  },
+  {
+    "id": 27,
+    "countryCode": "pk",
+    "currency": "PKR",
+    "currencySymbol": "₨",
+    "currencyName": "Pakistani Rupee"
+  },
+  {
+    "id": 28,
+    "countryCode": "pg",
+    "currency": "PGK",
+    "currencySymbol": "K",
+    "currencyName": "Papua New Guinean Kina"
+  },
+  {
+    "id": 29,
+    "countryCode": "ph",
+    "currency": "PHP",
+    "currencySymbol": "₱",
+    "currencyName": "Philippine Pesos"
+  },
+  {
+    "id": 30,
+    "countryCode": "pl",
+    "currency": "PLN",
+    "currencySymbol": "zł",
+    "currencyName": "Polish Zloty"
+  },
+  {
+    "id": 31,
+    "countryCode": "qa",
+    "currency": "QAR",
+    "currencySymbol": "ر.ق",
+    "currencyName": "Qatar Riyal"
+  },
+  {
+    "id": 32,
+    "countryCode": "sa",
+    "currency": "SAR",
+    "currencySymbol": "﷼",
+    "currencyName": "Saudi Arabian Riyals"
+  },
+  {
+    "id": 33,
+    "countryCode": "sg",
+    "currency": "SGD",
+    "currencySymbol": "S$",
+    "currencyName": "Singapore Dollars"
+  },
+  {
+    "id": 34,
+    "countryCode": "sb",
+    "currency": "SBD",
+    "currencySymbol": "Si$",
+    "currencyName": "Solomon Island Dollars"
+  },
+  {
+    "id": 35,
+    "countryCode": "za",
+    "currency": "ZAR",
+    "currencySymbol": "R",
+    "currencyName": "South African Rand"
+  },
+  {
+    "id": 36,
+    "countryCode": "lk",
+    "currency": "LKR",
+    "currencySymbol": "රු",
+    "currencyName": "Sri Lanka Rupees"
+  },
+  {
+    "id": 37,
+    "countryCode": "se",
+    "currency": "SEK",
+    "currencySymbol": "kr",
+    "currencyName": "Swedish Krona"
+  },
+  {
+    "id": 38,
+    "countryCode": "ch",
+    "currency": "CHF",
+    "currencySymbol": "SFr.",
+    "currencyName": "Swiss Francs"
+  },
+  {
+    "id": 39,
+    "countryCode": "th",
+    "currency": "THB",
+    "currencySymbol": "฿",
+    "currencyName": "Thai Bahts"
+  },
+  {
+    "id": 40,
+    "countryCode": "to",
+    "currency": "TOP",
+    "currencySymbol": "T$",
+    "currencyName": "Tonga Paanga"
+  },
+  {
+    "id": 41,
+    "countryCode": "ae",
+    "currency": "AED",
+    "currencySymbol": "د.إ",
+    "currencyName": "UAE Dirhams"
+  },
+  {
+    "id": 42,
+    "countryCode": "us",
+    "currency": "USD",
+    "currencySymbol": "$",
+    "currencyName": "United States Dollars"
+  },
+  {
+    "id": 43,
+    "countryCode": "vu",
+    "currency": "VUV",
+    "currencySymbol": "VT",
+    "currencyName": "Vanuatu Vatu"
+  },
+  {
+    "id": 44,
+    "countryCode": "ws",
+    "currency": "WST",
+    "currencySymbol": "ST",
+    "currencyName": "Western Samoa Tala"
+  }
+]
