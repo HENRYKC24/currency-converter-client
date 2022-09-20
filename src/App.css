@@ -180,7 +180,7 @@ input[type="number"] {
     display: block;
   }
 
-  .parent-from > div {
+  .parent-from > aside {
     width: 100vw;
   }
 
@@ -195,11 +195,11 @@ input[type="number"] {
   .main h1 {
     text-align: center;
   }
-  .parent-from > div > span:first-child {
+  .parent-from > aside > span:first-child {
     padding: 10px;
   }
 
-  .parent-from > div > div {
+  .parent-from > aside > div {
     width: 90vw;
     margin: auto;
   }
