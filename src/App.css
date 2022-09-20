@@ -93,6 +93,10 @@
   justify-content: space-between;
 }
 
+input[type="number"] {
+  margin-left: 5px;
+}
+
 .input-amount1 div {
   display: flex;
   align-items: center;
