@@ -47,6 +47,15 @@ const ConvertTo = ({
             setShow1(() => false);
           }}
           className="currency-card"
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            const keysToWorkWith = ["ArrowDown", "Enter", "Space"];
+            if (keysToWorkWith.includes(e.code)) {
+              setShow2((prev) => !prev);
+              setShow1(() => false);
+            }
+          }}
         >
           <div className="flag-name">
             <div className="flag">
@@ -67,7 +76,15 @@ const ConvertTo = ({
             ></i>
           </div>
         </div>
-        <div className={`dropdown ${show2 ? "show" : ""}`}>
+        <div
+          onKeyDown={(e) => {
+            if (e.key === "Escape" && show2) {
+              setShow2((prev) => !prev);
+              setShow1(() => false);
+            }
+          }}
+          className={`dropdown ${show2 ? "show" : ""}`}
+        >
           <div onClick={(e) => e.stopPropagation()}>
             <i className="fa fa-search"></i>
             <input
@@ -86,6 +103,7 @@ const ConvertTo = ({
                   )
                 );
               }}
+              tabIndex={show2 ? 0 : -1}
               type="text"
             />
           </div>
@@ -98,6 +116,7 @@ const ConvertTo = ({
                   setValue2={setValue2}
                   setExchRate={setExchRate2}
                   setDefaultCurrency={setDefaultCurrency}
+                  show={show2}
                   setShow={setShow2}
                   alphaCode={item.countryCode}
                   currencyName={item.currency}

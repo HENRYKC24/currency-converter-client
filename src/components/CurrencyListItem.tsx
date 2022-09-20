@@ -9,6 +9,7 @@ const CurrencyListItem = ({
   currencyDescription,
   currencySymbol,
   setDefaultCurrency,
+  show,
   setShow,
   setExchRate,
   setValue1,
@@ -16,6 +17,7 @@ const CurrencyListItem = ({
 }: {
   alphaCode: string;
   currencyName: string;
+  show: boolean;
   currencyDescription: string;
   currencySymbol: string;
   setDefaultCurrency: React.Dispatch<
@@ -52,6 +54,25 @@ const CurrencyListItem = ({
         setValue2(() => 0);
       }}
       className="currency-card currency-card2"
+      role="button"
+      tabIndex={show ? 0 : -1}
+      onKeyDown={(e) => {
+        const keysToWorkWith = ["Enter", "Space"];
+        if (keysToWorkWith.includes(e.code)) {
+          const wantedCurrency = currencies.find(
+            (curr) => curr.countryCode === alphaCode
+          );
+          setDefaultCurrency(() => wantedCurrency);
+          setShow(() => false);
+          getRates(
+            "http://localhost:4000/api/v1/rates/",
+            currencyName,
+            setExchRate
+          );
+          setValue1(() => 0);
+          setValue2(() => 0);
+        }
+      }}
     >
       <div className="flag-name">
         <div className="flag">
