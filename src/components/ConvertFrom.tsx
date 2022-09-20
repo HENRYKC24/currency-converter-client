@@ -38,7 +38,7 @@ const ConvertFrom = ({
   return (
     <div className="parent-from">
       <div>
-        Currency
+        <span>Currency</span>
         <div
           onClick={(e) => {
             e.stopPropagation();
