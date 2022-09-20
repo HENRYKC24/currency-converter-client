@@ -1,5 +1,12 @@
 .main {
   height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.convert-img {
+  margin-bottom: 20px;
 }
 
 .parent-from {
@@ -7,7 +14,6 @@
   gap: 20px;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 50px;
 }
 
 .currency-card {
@@ -18,7 +24,6 @@
   border: 1px solid grey;
   width: 210px;
   cursor: pointer;
-  /* margin: 5px; */
   padding: 5px;
 }
 
@@ -42,7 +47,6 @@
   overflow-x: hidden;
   overflow-y: auto;
   border: 1px solid grey;
-  /* width: 250px; */
 }
 
 .fa {
@@ -89,6 +93,10 @@
   justify-content: space-between;
 }
 
+input[type="number"] {
+  margin-left: 5px;
+}
+
 .input-amount1 div {
   display: flex;
   align-items: center;
@@ -130,13 +138,23 @@
   font-size: 1rem;
 }
 
-.input-amount1 div span:nth-child(1) {
+.input-amount1 .input span:last-child {
   color: rgb(175, 165, 165);
 }
 
 .input-amount1 input:focus {
   border: none;
   outline: none;
+}
+
+.no-match {
+  text-align: center;
+}
+
+.up-down-arrow {
+  width: 50px;
+  margin: 20px 0;
+  opacity: 0.5;
 }
 
 @keyframes rotate-down {
@@ -154,5 +172,42 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .parent-from {
+    display: block;
+  }
+
+  .parent-from > div {
+    width: 100vw;
+  }
+
+  .main {
+    margin: auto;
+  }
+
+  .main .currency-card {
+    margin-bottom: 5px;
+  }
+
+  .main h1 {
+    text-align: center;
+  }
+  .parent-from > div > span:first-child {
+    padding: 10px;
+  }
+
+  .parent-from > div > div {
+    width: 90vw;
+    margin: auto;
+  }
+
+  .parent-from .dropdown {
+    padding: 0 20px;
+  }
+  .parent-from .dropdown .list {
+    width: 100%;
   }
 }
