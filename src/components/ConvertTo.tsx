@@ -37,8 +37,8 @@ const ConvertTo = ({
   }, [setExchRate2]);
 
   return (
-    <div className="parent-from">
-      <div>
+    <section className="parent-from">
+      <aside>
         <span>Currency</span>
         <div
           onClick={(e) => {
@@ -129,8 +129,8 @@ const ConvertTo = ({
             )}
           </div>
         </div>
-      </div>
-      <div className="input-amount1">
+      </aside>
+      <aside className="input-amount1">
         <span>Amount</span>
         <div className="input">
           <span>{defaultCurrency?.currencySymbol}</span>
@@ -151,8 +151,8 @@ const ConvertTo = ({
           />
           <span>{defaultCurrency?.currency}</span>
         </div>
-      </div>
-    </div>
+      </aside>
+    </section>
   );
 };
 

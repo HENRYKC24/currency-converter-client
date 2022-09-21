@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
 import ConvertTo from "./components/ConvertTo";
-import Exchange from "./assets/images/exchange.png"
+import Exchange from "./assets/images/exchange.png";
 import ConvertFrom from "./components/ConvertFrom";
 
-import UpDown from "./assets/images/up_down_arrow.png"
+import UpDown from "./assets/images/up_down_arrow.png";
 
 const App: React.FC = () => {
   const [show1, setShow1] = useState(false);
@@ -15,11 +15,17 @@ const App: React.FC = () => {
 
   const [exchRate1, setExchRate1] = useState(0);
   const [exchRate2, setExchRate2] = useState(0);
+
+  document.title = "Currency Converter";
+
   return (
-    <div className="main" onClick={() => {
-      setShow1(() => false);
-      setShow2(() => false);
-    }}>
+    <main
+      className="main"
+      onClick={() => {
+        setShow1(() => false);
+        setShow2(() => false);
+      }}
+    >
       <h1>Currency Converter</h1>
       <img className="convert-img" width={150} src={Exchange} alt="ex" />
       <ConvertFrom
@@ -47,7 +53,7 @@ const App: React.FC = () => {
         setShow1={setShow1}
         setShow2={setShow2}
       />
-    </div>
+    </main>
   );
 };
 
