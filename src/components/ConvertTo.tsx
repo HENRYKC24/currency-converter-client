@@ -39,7 +39,7 @@ const ConvertTo = ({
   return (
     <section className="parent-from">
       <aside>
-        <span>Currency</span>
+        <span className="label">Currency</span>
         <div
           onClick={(e) => {
             e.stopPropagation();
@@ -131,7 +131,7 @@ const ConvertTo = ({
         </div>
       </aside>
       <aside className="input-amount1">
-        <span>Amount</span>
+        <span className="label">Amount</span>
         <div className="input">
           <span>{defaultCurrency?.currencySymbol}</span>
           <input

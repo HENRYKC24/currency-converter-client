@@ -151,6 +151,11 @@ input[type="number"] {
   text-align: center;
 }
 
+.parent-from .currency-card,
+.parent-from .input {
+  margin-top: 2px;
+}
+
 .up-down-arrow {
   width: 50px;
   margin: 20px 0;
@@ -192,11 +197,16 @@ input[type="number"] {
     margin-bottom: 5px;
   }
 
+  .label {
+    margin-bottom: 20px;
+  }
+
   .main h1 {
     text-align: center;
   }
+
   .parent-from > aside > span:first-child {
-    padding: 10px;
+    padding-left: 10px;
   }
 
   .parent-from > aside > div {
