@@ -154,6 +154,7 @@ input[type="number"] {
 .parent-from .currency-card,
 .parent-from .input {
   margin-top: 2px;
+  border-radius: 5px;
 }
 
 .up-down-arrow {
