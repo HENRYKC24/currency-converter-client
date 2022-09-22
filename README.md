@@ -26,6 +26,8 @@ To get a local copy up and running follow these simple example steps in the comm
 
 4. Start application locally: `yarn start`
 
+5. Test the application: `yarn test`
+
 
 
 ## Author
