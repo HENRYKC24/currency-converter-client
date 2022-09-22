@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# Currency Converter
+This application converts different currencies to any chosen one.
+## Built With
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Typescript
+- React
+- JavaScript
+- Jest
+- Axios
 
-## Available Scripts
+## Screenshot
+### Desktop
+![screenshot](./src/assets/images/Screenshot.png)
 
-In the project directory, you can run:
+### Mobile
+![screenshot](./src/assets/images/Screenshot2.png)
+## Getting Started
 
-### `yarn start`
+To get a local copy up and running follow these simple example steps in the command line:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Clone the repo: `git clone https://github.com/HENRYKC24/currency-converter-client.git`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. Go to the project folder: `cd currency-converter-client`
 
-### `yarn test`
+3. Install dependencies: `yarn install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Start application locally: `yarn start`
 
-### `yarn build`
+5. Test the application: `yarn test`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Author
 
-### `yarn eject`
+👤 **Henry Kc**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- GitHub: [@githubhandle](https://github.com/henrykc24)
+- Twitter: [@twitterhandle](https://twitter.com/henrykc24)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/henry-kc)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🤝 Contributing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Contributions, issues, and feature requests are welcome!
 
-## Learn More
+Feel free to check the [issues page](https://github.com/HENRYKC24/currency-converter-client/issues/).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Show your support
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Special thanks to every software developer whose code was used in this application.
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
