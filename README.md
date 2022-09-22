@@ -9,15 +9,12 @@ This application converts different currencies to any chosen one.
 - Axios
 
 ## Screenshot
+### Desktop
 ![screenshot](./src/assets/images/Screenshot.png)
 
-## Live Demo
-
-[Live Demo Link](https://henrykc24.github.io/React-Typescript-Todo-App/)
-
-
+### Mobile
+![screenshot](./src/assets/images/Screenshot2.png)
 ## Getting Started
-
 
 To get a local copy up and running follow these simple example steps in the command line:
 
